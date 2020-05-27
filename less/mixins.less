@@ -1,0 +1,23 @@
+.flex-spread() {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-tower() {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button(@height, @width, @font, @size, @color, @bg) {
+    font-family: @font;
+    font-size: @size;
+    color: @color;
+    background-color: @bg;
+    border-radius: 6px;
+    margin: auto;
+    height: @height;
+    width: @width;
+    text-align: center;
+}
