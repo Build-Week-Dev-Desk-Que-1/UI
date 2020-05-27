@@ -4,12 +4,20 @@
     align-items: center;
 }
 
-.button(@width, @height, @font, @size, @color, @bg) {
-    width: @width;
-    height: @height;
+.flex-tower() {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button(@height, @width, @font, @size, @color, @bg) {
     font-family: @font;
     font-size: @size;
     color: @color;
     background-color: @bg;
-    border-radius: 12px;
+    border-radius: 6px;
+    margin: auto;
+    height: @height;
+    width: @width;
+    text-align: center;
 }
