@@ -147,12 +147,14 @@ header {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  margin: 1%;
 }
 header logo {
   font-size: 4.8rem;
   font-family: 'Montserrat', sans-serif;
   color: #0AC3CF;
+}
+header .top-nav a {
+  display: none;
 }
 header .signup {
   display: flex;
@@ -175,9 +177,6 @@ header .signup #student-signup {
   height: 24px;
   width: 74px;
   text-align: center;
-}
-header .top-nav a {
-  display: none;
 }
 .main-content {
   display: flex;
