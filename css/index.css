@@ -227,6 +227,8 @@ header .signup #student-signup {
   text-align: center;
   text-decoration: none;
   display: inline-block;
+  padding-top: 3%;
+  box-sizing: border-box;
 }
 header .signup #helper-signup {
   font-family: 'Source Sans Pro', sans-serif;
@@ -240,6 +242,8 @@ header .signup #helper-signup {
   text-align: center;
   text-decoration: none;
   display: inline-block;
+  padding-top: 3%;
+  box-sizing: border-box;
 }
 header .signup #about-signup {
   font-family: 'Source Sans Pro', sans-serif;
@@ -253,6 +257,8 @@ header .signup #about-signup {
   text-align: center;
   text-decoration: none;
   display: inline-block;
+  padding-top: 3%;
+  box-sizing: border-box;
 }
 @media (min-width: 550px) {
   header .signup {
@@ -264,21 +270,26 @@ header .signup #about-signup {
   flex-direction: column;
   align-items: center;
 }
+.main-content .main-text {
+  width: 70%;
+}
 .main-content .main-text h1 {
   font-weight: 600;
   margin-top: 20%;
   line-height: 1.2;
-  width: 70%;
 }
 .main-content .main-text h2 {
   margin: 2.5% 0;
-  width: 70%;
 }
 .main-content .main-text p {
   font-size: 1.6rem;
   line-height: 1.5;
   margin: 7% 0;
-  width: 70%;
+}
+@media (min-width: 550px) {
+  .main-content .main-text p {
+    font-size: 2.4rem;
+  }
 }
 .main-content .main-text #student-start {
   font-family: 'Source Sans Pro', sans-serif;
@@ -292,7 +303,26 @@ header .signup #about-signup {
   text-align: center;
   text-decoration: none;
   display: inline-block;
+  padding-top: 3%;
+  box-sizing: border-box;
   font-weight: 600;
+}
+@media (min-width: 550px) {
+  .main-content .main-text #student-start {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 3.6rem;
+    color: #FFFFFF;
+    background-color: #C716C4;
+    border-radius: 6px;
+    margin: auto;
+    height: 95px;
+    width: 393px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding-top: 3%;
+    box-sizing: border-box;
+  }
 }
 .main-content .main-text #helper-start {
   font-family: 'Source Sans Pro', sans-serif;
@@ -306,11 +336,63 @@ header .signup #about-signup {
   text-align: center;
   text-decoration: none;
   display: inline-block;
+  padding-top: 3%;
+  box-sizing: border-box;
   font-weight: 600;
 }
-.main-content .main-image {
-  margin: 15% 0;
+@media (min-width: 550px) {
+  .main-content .main-text #helper-start {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 3.6rem;
+    color: #2E2C48;
+    background-color: #0AC3CF;
+    border-radius: 6px;
+    margin: auto;
+    height: 95px;
+    width: 393px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding-top: 3%;
+    box-sizing: border-box;
+  }
+}
+@media (min-width: 550px) {
+  .main-content .main-text {
+    width: 50%;
+    margin-left: 3%;
+    margin-top: -5%;
+  }
+}
+.main-content div {
+  margin: 7% 0;
+}
+.main-content div .main-image {
   border: 6px #CACED2 solid;
+  background-image: url("http://placekitten.com/200/300");
+  width: 233px;
+  height: 489px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 54px;
+}
+@media (min-width: 550px) {
+  .main-content div .main-image {
+    width: 448px;
+    height: 898px;
+  }
+}
+@media (min-width: 550px) {
+  .main-content div {
+    width: 40%;
+  }
+}
+@media (min-width: 550px) {
+  .main-content {
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 footer {
   border-top: 1px #E0E0E0 solid;
