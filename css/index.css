@@ -160,7 +160,7 @@ header .signup {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 45%;
+  width: 50%;
 }
 header .signup a {
   font-size: 1.3rem;
@@ -208,15 +208,18 @@ header .signup #about-signup {
 .main-content .main-text h1 {
   font-weight: 600;
   margin-top: 20%;
+  line-height: 1.2;
+  width: 70%;
 }
 .main-content .main-text h2 {
   margin: 2.5% 0;
+  width: 70%;
 }
 .main-content .main-text p {
   font-size: 1.6rem;
   line-height: 1.5;
-  width: 70%;
   margin: 7% 0;
+  width: 70%;
 }
 .main-content .main-text #student-start {
   font-family: 'Source Sans Pro', sans-serif;
