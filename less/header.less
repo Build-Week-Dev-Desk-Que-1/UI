@@ -17,11 +17,11 @@ header{
         }
 
         p {
-            display:none;
+            display:none; //hidden at mibile sizes
 
             @media @desktop {
                 display: block;
-                color: #2E2C48;
+                color: @headline-color;
                 font-size: 2.4rem;
                 font-weight: 600;
             }
@@ -31,7 +31,7 @@ header{
     .top-nav {
         
         a {
-            display: none;
+            display: none; //hidden on mobile
 
             @media @desktop {
                 display: block;
@@ -71,7 +71,7 @@ header{
         }
 
         @media @desktop {
-            display: none;
+            display: none; //hidden on desktop
         }
     }
 
