@@ -139,8 +139,18 @@ body {
 h1 {
   font-size: 3rem;
 }
+@media (min-width: 550px) {
+  h1 {
+    font-size: 6.4rem;
+  }
+}
 h2 {
   font-size: 2.4rem;
+}
+@media (min-width: 550px) {
+  h2 {
+    font-size: 4.8rem;
+  }
 }
 header {
   display: flex;
@@ -259,6 +269,21 @@ header .signup #about-signup {
   padding: 20% 0 10% 0;
   font-weight: 600;
 }
+@media (min-width: 550px) {
+  .about-content h1 {
+    padding: 10% 0;
+  }
+}
+@media (min-width: 550px) {
+  .about-content div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 2.5%;
+    justify-content: space-around;
+  }
+}
 .about-content div .team-profiles {
   display: flex;
   flex-direction: column;
@@ -269,23 +294,44 @@ header .signup #about-signup {
   width: 220px;
   border: 4px #CACED2 solid;
 }
+@media (min-width: 550px) {
+  .about-content div .team-profiles img {
+    width: 300px;
+  }
+}
 .about-content div .team-profiles h2 {
-  padding: 3% 0;
+  padding: 2% 0;
   font-weight: 600;
 }
+@media (min-width: 550px) {
+  .about-content div .team-profiles h2 {
+    font-size: 4rem;
+  }
+}
 .about-content div .team-profiles h3 {
-  padding: 3% 0;
+  padding: 2% 0;
   font-size: 1.6rem;
   font-weight: 600;
   color: #0AC3CF;
   text-decoration: underline;
 }
+@media (min-width: 550px) {
+  .about-content div .team-profiles h3 {
+    font-size: 2.8rem;
+  }
+}
 .about-content div .team-profiles p {
   font-size: 1.6rem;
-  width: 50%;
+  width: 220px;
   text-align: center;
   line-height: 1.3;
   padding: 1% 0 7% 0;
+}
+@media (min-width: 550px) {
+  .about-content div .team-profiles p {
+    font-size: 2.4rem;
+    width: 300px;
+  }
 }
 footer {
   border-top: 1px #E0E0E0 solid;
