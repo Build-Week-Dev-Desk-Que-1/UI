@@ -1,0 +1,221 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+html {
+  font-size: 10px;
+  box-sizing: border-box;
+}
+body {
+  color: #525575;
+  background-color: #F9FAFB;
+  font-family: 'Source Sans Pro', sans-serif;
+  padding: 2%;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2.4rem;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 1%;
+}
+header logo {
+  font-size: 4.8rem;
+  font-family: 'Montserrat', sans-serif;
+  color: #0AC3CF;
+}
+header .signup {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 45%;
+}
+header .signup a {
+  font-size: 1.3rem;
+  line-height: 1.5;
+  color: #525575;
+}
+header .signup #student-signup {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.3rem;
+  color: #FFFF;
+  background-color: #C716C4;
+  border-radius: 6px;
+  margin: auto;
+  height: 24px;
+  width: 74px;
+  text-align: center;
+}
+header .top-nav a {
+  display: none;
+}
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-content h1 {
+  padding: 20% 0 10% 0;
+}
+.about-content div .team-profiles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-content div .team-profiles h2 {
+  padding: 3% 0;
+  font-weight: 600;
+}
+.about-content div .team-profiles h3 {
+  padding: 3% 0;
+  font-size: 1.6rem;
+}
+footer {
+  border-top: 1px #E0E0E0 solid;
+  padding: 20px 0;
+}
+footer .bottom-nav {
+  display: flex;
+  flex-direction: column;
+}
+footer .bottom-nav a {
+  font-size: 1.4rem;
+  color: #525575;
+  margin: 7px 0;
+  font-weight: 600;
+  text-decoration: none;
+}
+footer p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
