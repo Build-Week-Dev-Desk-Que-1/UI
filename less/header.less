@@ -26,7 +26,15 @@ header{
         }
 
         #student-signup {
-            .button(24px, 74px, @main-font, 1.3rem, #FFFF, #C716C4);
+            .button(24px, 74px, @main-font, 1.3rem, @student-button-color, @student-button-bg);
+        }
+
+        #helper-signup {
+            .button(24px, 74px, @main-font, 1.3rem, @student-button-color, @helper-button-color);
+        }
+
+        #about-signup {
+            .button(24px, 74px, @main-font, 1.3rem, @student-button-color, @helper-button-bg);
         }
     }
 

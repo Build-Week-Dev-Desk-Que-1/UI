@@ -170,8 +170,30 @@ header .signup a {
 header .signup #student-signup {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 1.3rem;
-  color: #FFFF;
+  color: #FFFFFF;
   background-color: #C716C4;
+  border-radius: 6px;
+  margin: auto;
+  height: 24px;
+  width: 74px;
+  text-align: center;
+}
+header .signup #helper-signup {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.3rem;
+  color: #FFFFFF;
+  background-color: #2E2C48;
+  border-radius: 6px;
+  margin: auto;
+  height: 24px;
+  width: 74px;
+  text-align: center;
+}
+header .signup #about-signup {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.3rem;
+  color: #FFFFFF;
+  background-color: #0AC3CF;
   border-radius: 6px;
   margin: auto;
   height: 24px;
@@ -199,8 +221,20 @@ header .signup #student-signup {
 .main-content .main-text #student-start {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 2.1rem;
-  color: #FFFF;
+  color: #FFFFFF;
   background-color: #C716C4;
+  border-radius: 6px;
+  margin: auto;
+  height: 40px;
+  width: 163px;
+  text-align: center;
+  font-weight: 600;
+}
+.main-content .main-text #helper-start {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 2.1rem;
+  color: #2E2C48;
+  background-color: #0AC3CF;
   border-radius: 6px;
   margin: auto;
   height: 40px;
