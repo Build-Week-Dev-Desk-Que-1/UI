@@ -1,42 +1,81 @@
 .main-content {
     .flex-tower();
-    
+
+
     .main-text {
+        width: 70%;
 
         h1 {
             font-weight: 600;
             margin-top: 20%;
             line-height: 1.2;
-            width: 70%;
         }
 
         h2 {
             margin: 2.5% 0;
-            width: 70%;
-
         }
 
         p {
             font-size: 1.6rem;
             line-height: 1.5;
             margin: 7% 0;
-            width: 70%;
-
+            
+            @media @desktop {
+                font-size: 2.4rem;
+            }
         }
 
         #student-start {
             .button(40px, 163px, @main-font, 2.1rem, @student-button-color, @student-button-bg);
             font-weight: 600;
+
+            @media @desktop {
+                .button(95px, 393px, @main-font, 3.6rem, @student-button-color, @student-button-bg);
+            }
         }
 
         #helper-start {
             .button(40px, 163px, @main-font, 2.1rem, @helper-button-color, @helper-button-bg);
             font-weight: 600;
+
+            @media @desktop {
+                .button(95px, 393px, @main-font, 3.6rem, @helper-button-color, @helper-button-bg);
+            }
+        }
+
+        @media @desktop {
+            width: 50%;
+            margin-left: 3%;
+            margin-top: -5%;
+        }
+    }
+    
+    div {
+        margin: 7% 0;
+
+        .main-image {
+            border: 6px #CACED2 solid;
+            background-image: url("http://placekitten.com/200/300");
+            width: 233px;
+            height: 489px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            border-radius: 54px;
+
+            @media @desktop {
+                width: 448px;
+                height: 898px;
+            }
+        }
+
+        @media @desktop {
+            width: 40%;
         }
     }
 
-    .main-image {
-        margin: 15% 0;
-        border: 6px #CACED2 solid;
+    @media @desktop {
+        flex-direction: row;
+        justify-content: space-around;
     }
 }

@@ -227,6 +227,8 @@ header .signup #student-signup {
   text-align: center;
   text-decoration: none;
   display: inline-block;
+  padding-top: 3%;
+  box-sizing: border-box;
 }
 header .signup #helper-signup {
   font-family: 'Source Sans Pro', sans-serif;
@@ -240,6 +242,8 @@ header .signup #helper-signup {
   text-align: center;
   text-decoration: none;
   display: inline-block;
+  padding-top: 3%;
+  box-sizing: border-box;
 }
 header .signup #about-signup {
   font-family: 'Source Sans Pro', sans-serif;
@@ -253,6 +257,8 @@ header .signup #about-signup {
   text-align: center;
   text-decoration: none;
   display: inline-block;
+  padding-top: 3%;
+  box-sizing: border-box;
 }
 @media (min-width: 550px) {
   header .signup {
@@ -331,6 +337,11 @@ header .signup #about-signup {
   .about-content div .team-profiles p {
     font-size: 2.4rem;
     width: 300px;
+  }
+}
+@media (min-width: 550px) {
+  .about-content {
+    margin-bottom: 0;
   }
 }
 footer {
