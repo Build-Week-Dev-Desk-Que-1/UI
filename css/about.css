@@ -295,6 +295,12 @@ footer .bottom-nav {
   display: flex;
   flex-direction: column;
 }
+@media (min-width: 550px) {
+  footer .bottom-nav {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
 footer .bottom-nav a {
   font-size: 1.4rem;
   color: #525575;
@@ -302,7 +308,19 @@ footer .bottom-nav a {
   font-weight: 600;
   text-decoration: none;
 }
+@media (min-width: 550px) {
+  footer .bottom-nav a {
+    font-size: 2rem;
+  }
+}
 footer p {
   font-size: 1.2rem;
   margin-top: 10px;
+}
+@media (min-width: 550px) {
+  footer p {
+    font-size: 1.6rem;
+    text-align: center;
+    margin-top: 40px;
+  }
 }
