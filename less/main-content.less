@@ -2,26 +2,35 @@
     .flex-tower();
     
     .main-text {
-        
 
         h1 {
             font-weight: 600;
             margin-top: 20%;
+            line-height: 1.2;
+            width: 70%;
         }
 
         h2 {
             margin: 2.5% 0;
+            width: 70%;
+
         }
 
         p {
             font-size: 1.6rem;
             line-height: 1.5;
-            width: 70%;
             margin: 7% 0;
+            width: 70%;
+
         }
 
         #student-start {
-            .button(40px, 163px, @main-font, 2.1rem, #FFFF, #C716C4);
+            .button(40px, 163px, @main-font, 2.1rem, @student-button-color, @student-button-bg);
+            font-weight: 600;
+        }
+
+        #helper-start {
+            .button(40px, 163px, @main-font, 2.1rem, @helper-button-color, @helper-button-bg);
             font-weight: 600;
         }
     }

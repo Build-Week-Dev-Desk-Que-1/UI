@@ -259,58 +259,79 @@ header .signup #about-signup {
     display: none;
   }
 }
-.main-content {
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10%;
+}
+.about-content h1 {
+  padding: 20% 0 10% 0;
+  font-weight: 600;
+}
+@media (min-width: 550px) {
+  .about-content h1 {
+    padding: 10% 0;
+  }
+}
+@media (min-width: 550px) {
+  .about-content div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 2.5%;
+    justify-content: space-around;
+  }
+}
+.about-content div .team-profiles {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.main-content .main-text h1 {
+.about-content div .team-profiles img {
+  height: auto;
+  width: 220px;
+  border: 4px #CACED2 solid;
+}
+@media (min-width: 550px) {
+  .about-content div .team-profiles img {
+    width: 300px;
+  }
+}
+.about-content div .team-profiles h2 {
+  padding: 2% 0;
   font-weight: 600;
-  margin-top: 20%;
-  line-height: 1.2;
-  width: 70%;
 }
-.main-content .main-text h2 {
-  margin: 2.5% 0;
-  width: 70%;
+@media (min-width: 550px) {
+  .about-content div .team-profiles h2 {
+    font-size: 4rem;
+  }
 }
-.main-content .main-text p {
+.about-content div .team-profiles h3 {
+  padding: 2% 0;
   font-size: 1.6rem;
-  line-height: 1.5;
-  margin: 7% 0;
-  width: 70%;
-}
-.main-content .main-text #student-start {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 2.1rem;
-  color: #FFFFFF;
-  background-color: #C716C4;
-  border-radius: 6px;
-  margin: auto;
-  height: 40px;
-  width: 163px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
   font-weight: 600;
+  color: #0AC3CF;
+  text-decoration: underline;
 }
-.main-content .main-text #helper-start {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 2.1rem;
-  color: #2E2C48;
-  background-color: #0AC3CF;
-  border-radius: 6px;
-  margin: auto;
-  height: 40px;
-  width: 163px;
+@media (min-width: 550px) {
+  .about-content div .team-profiles h3 {
+    font-size: 2.8rem;
+  }
+}
+.about-content div .team-profiles p {
+  font-size: 1.6rem;
+  width: 220px;
   text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-weight: 600;
+  line-height: 1.3;
+  padding: 1% 0 7% 0;
 }
-.main-content .main-image {
-  margin: 15% 0;
-  border: 6px #CACED2 solid;
+@media (min-width: 550px) {
+  .about-content div .team-profiles p {
+    font-size: 2.4rem;
+    width: 300px;
+  }
 }
 footer {
   border-top: 1px #E0E0E0 solid;
