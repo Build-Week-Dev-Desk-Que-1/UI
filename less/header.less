@@ -2,17 +2,50 @@ header{
     .flex-spread();
     width: 100%;
 
-    logo {
-        font-size: 4.8rem;
-        font-family: @logo-font;
-        color: @logo-color;
+    div {
+        .flex-spread();
+        width: 160px;
+
+        logo {
+            font-size: 4.8rem;
+            font-family: @logo-font;
+            color: @logo-color;
+
+            @media @desktop {
+                font-size: 4.8rem;
+            }
+        }
+
+        p {
+            display:none;
+
+            @media @desktop {
+                display: block;
+                color: #2E2C48;
+                font-size: 2.4rem;
+                font-weight: 600;
+            }
+        }
     }
 
     .top-nav {
         
         a {
             display: none;
+
+            @media @desktop {
+                display: block;
+                font-size: 2.4rem;
+                color: @main-color;
+                text-decoration: none;
+            }
         }
+
+        @media @desktop {
+            .flex-spread();
+            width: 30%;
+        }
+        
     }
 
     .signup {
@@ -26,7 +59,7 @@ header{
         }
 
         #student-signup {
-            .button(24px, 74px, @main-font, 1.3rem, @student-button-color, @student-button-bg);
+            .button(30px, 74px, @main-font, 1.3rem, @student-button-color, @student-button-bg);
         }
 
         #helper-signup {
@@ -35,6 +68,10 @@ header{
 
         #about-signup {
             .button(24px, 74px, @main-font, 1.3rem, @student-button-color, @helper-button-bg);
+        }
+
+        @media @desktop {
+            display: none;
         }
     }
 
