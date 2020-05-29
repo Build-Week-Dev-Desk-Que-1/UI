@@ -1,31 +1,78 @@
 header{
     .flex-spread();
     width: 100%;
-    margin: 1%;
 
-    logo {
-        font-size: 4.8rem;
-        font-family: @logo-font;
-        color: @logo-color;
+    div {
+        .flex-spread();
+        width: 160px;
+
+        logo {
+            font-size: 4.8rem;
+            font-family: @logo-font;
+            color: @logo-color;
+
+            @media @desktop {
+                font-size: 4.8rem;
+            }
+        }
+
+        p {
+            display:none; //hidden at mibile sizes
+
+            @media @desktop {
+                display: block;
+                color: @headline-color;
+                font-size: 2.4rem;
+                font-weight: 600;
+            }
+        }
+    }
+
+    .top-nav {
+        
+        a {
+            display: none; //hidden on mobile
+
+            @media @desktop {
+                display: block;
+                font-size: 2.4rem;
+                color: @main-color;
+                text-decoration: none;
+            }
+        }
+
+        @media @desktop {
+            .flex-spread();
+            width: 30%;
+        }
+        
     }
 
     .signup {
         .flex-spread();
-        width: 45%;
+        width: 50%;
 
         a {
             font-size: 1.3rem;
             line-height: 1.5;
             color: @main-color;
         }
+
         #student-signup {
-            .button(24px, 74px, @main-font, 1.3rem, #FFFF, #C716C4);
+            .button(30px, 74px, @main-font, 1.3rem, @student-button-color, @student-button-bg);
+        }
+
+        #helper-signup {
+            .button(24px, 74px, @main-font, 1.3rem, @student-button-color, @helper-button-color);
+        }
+
+        #about-signup {
+            .button(24px, 74px, @main-font, 1.3rem, @student-button-color, @helper-button-bg);
+        }
+
+        @media @desktop {
+            display: none; //hidden on desktop
         }
     }
 
-    .top-nav {
-        a {
-            display: none;
-        }
-    }
 }
